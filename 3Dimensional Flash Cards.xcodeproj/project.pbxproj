@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		31AB20BE20D65B2F00A16DA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AB20BD20D65B2F00A16DA5 /* AppDelegate.swift */; };
-		31AB20C020D65B2F00A16DA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AB20BF20D65B2F00A16DA5 /* ViewController.swift */; };
-		31AB20C320D65B2F00A16DA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31AB20C120D65B2F00A16DA5 /* Main.storyboard */; };
 		31AB20C520D65B2F00A16DA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31AB20C420D65B2F00A16DA5 /* Assets.xcassets */; };
 		31AB20C820D65B2F00A16DA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31AB20C620D65B2F00A16DA5 /* LaunchScreen.storyboard */; };
+		4C2947DF20F4845B00A64110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2947DE20F4845B00A64110 /* Main.storyboard */; };
+		4C3A116320F484C0002E41EA /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A116220F484C0002E41EA /* ListViewController.swift */; };
+		4C3A116520F484C7002E41EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A116420F484C7002E41EA /* ViewController.swift */; };
+		4C3A116720F484CD002E41EA /* RealmDateBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A116620F484CD002E41EA /* RealmDateBase.swift */; };
+		4C3A116920F484D1002E41EA /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A116820F484D1002E41EA /* InputController.swift */; };
 		4CD9BBCB20F0B4FA00EAD32E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9BBC920F0B4F700EAD32E /* Realm.framework */; };
 		4CD9BBCC20F0B4FA00EAD32E /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9BBC920F0B4F700EAD32E /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4CD9BBCD20F0B4FA00EAD32E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9BBCA20F0B4FA00EAD32E /* RealmSwift.framework */; };
@@ -36,11 +39,14 @@
 /* Begin PBXFileReference section */
 		31AB20BA20D65B2F00A16DA5 /* 3Dimensional Flash Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3Dimensional Flash Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31AB20BD20D65B2F00A16DA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		31AB20BF20D65B2F00A16DA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		31AB20C220D65B2F00A16DA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31AB20C420D65B2F00A16DA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31AB20C720D65B2F00A16DA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31AB20C920D65B2F00A16DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C2947DE20F4845B00A64110 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4C3A116220F484C0002E41EA /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		4C3A116420F484C7002E41EA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C3A116620F484CD002E41EA /* RealmDateBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDateBase.swift; sourceTree = "<group>"; };
+		4C3A116820F484D1002E41EA /* InputController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
 		4CD9BBC920F0B4F700EAD32E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		4CD9BBCA20F0B4FA00EAD32E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,11 +85,14 @@
 		31AB20BC20D65B2F00A16DA5 /* 3Dimensional Flash Cards */ = {
 			isa = PBXGroup;
 			children = (
+				4C2947DE20F4845B00A64110 /* Main.storyboard */,
 				31AB20BD20D65B2F00A16DA5 /* AppDelegate.swift */,
-				31AB20BF20D65B2F00A16DA5 /* ViewController.swift */,
-				31AB20C120D65B2F00A16DA5 /* Main.storyboard */,
+				4C3A116220F484C0002E41EA /* ListViewController.swift */,
+				4C3A116420F484C7002E41EA /* ViewController.swift */,
 				31AB20C420D65B2F00A16DA5 /* Assets.xcassets */,
 				31AB20C620D65B2F00A16DA5 /* LaunchScreen.storyboard */,
+				4C3A116620F484CD002E41EA /* RealmDateBase.swift */,
+				4C3A116820F484D1002E41EA /* InputController.swift */,
 				31AB20C920D65B2F00A16DA5 /* Info.plist */,
 			);
 			path = "3Dimensional Flash Cards";
@@ -150,9 +159,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C2947DF20F4845B00A64110 /* Main.storyboard in Resources */,
 				31AB20C820D65B2F00A16DA5 /* LaunchScreen.storyboard in Resources */,
 				31AB20C520D65B2F00A16DA5 /* Assets.xcassets in Resources */,
-				31AB20C320D65B2F00A16DA5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31AB20C020D65B2F00A16DA5 /* ViewController.swift in Sources */,
+				4C3A116720F484CD002E41EA /* RealmDateBase.swift in Sources */,
+				4C3A116520F484C7002E41EA /* ViewController.swift in Sources */,
+				4C3A116320F484C0002E41EA /* ListViewController.swift in Sources */,
+				4C3A116920F484D1002E41EA /* InputController.swift in Sources */,
 				31AB20BE20D65B2F00A16DA5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,14 +200,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		31AB20C120D65B2F00A16DA5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				31AB20C220D65B2F00A16DA5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		31AB20C620D65B2F00A16DA5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
