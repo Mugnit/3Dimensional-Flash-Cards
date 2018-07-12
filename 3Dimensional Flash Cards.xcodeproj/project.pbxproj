@@ -8,20 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		31AB20BE20D65B2F00A16DA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AB20BD20D65B2F00A16DA5 /* AppDelegate.swift */; };
-		31AB20C020D65B2F00A16DA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AB20BF20D65B2F00A16DA5 /* ViewController.swift */; };
-		31AB20C320D65B2F00A16DA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31AB20C120D65B2F00A16DA5 /* Main.storyboard */; };
 		31AB20C520D65B2F00A16DA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31AB20C420D65B2F00A16DA5 /* Assets.xcassets */; };
 		31AB20C820D65B2F00A16DA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31AB20C620D65B2F00A16DA5 /* LaunchScreen.storyboard */; };
+		4C2947DF20F4845B00A64110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2947DE20F4845B00A64110 /* Main.storyboard */; };
+		4C33081420F71375004CB85D /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C33081320F71375004CB85D /* InputController.swift */; };
+		4C33081620F7157C004CB85D /* DetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C33081520F7157C004CB85D /* DetailListViewController.swift */; };
+		4C3A116320F484C0002E41EA /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A116220F484C0002E41EA /* ListViewController.swift */; };
+		4C3A116520F484C7002E41EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A116420F484C7002E41EA /* ViewController.swift */; };
+		4C3A116720F484CD002E41EA /* RealmDateBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A116620F484CD002E41EA /* RealmDateBase.swift */; };
+		4CD9BBCB20F0B4FA00EAD32E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9BBC920F0B4F700EAD32E /* Realm.framework */; };
+		4CD9BBCC20F0B4FA00EAD32E /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9BBC920F0B4F700EAD32E /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4CD9BBCD20F0B4FA00EAD32E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9BBCA20F0B4FA00EAD32E /* RealmSwift.framework */; };
+		4CD9BBCE20F0B4FA00EAD32E /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9BBCA20F0B4FA00EAD32E /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4CD9BBCF20F0B4FA00EAD32E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4CD9BBCE20F0B4FA00EAD32E /* RealmSwift.framework in Embed Frameworks */,
+				4CD9BBCC20F0B4FA00EAD32E /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		31AB20BA20D65B2F00A16DA5 /* 3Dimensional Flash Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3Dimensional Flash Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31AB20BD20D65B2F00A16DA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		31AB20BF20D65B2F00A16DA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		31AB20C220D65B2F00A16DA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31AB20C420D65B2F00A16DA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31AB20C720D65B2F00A16DA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31AB20C920D65B2F00A16DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C2947DE20F4845B00A64110 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4C33081320F71375004CB85D /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
+		4C33081520F7157C004CB85D /* DetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListViewController.swift; sourceTree = "<group>"; };
+		4C3A116220F484C0002E41EA /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		4C3A116420F484C7002E41EA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C3A116620F484CD002E41EA /* RealmDateBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDateBase.swift; sourceTree = "<group>"; };
+		4CD9BBC920F0B4F700EAD32E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		4CD9BBCA20F0B4FA00EAD32E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD9BBCD20F0B4FA00EAD32E /* RealmSwift.framework in Frameworks */,
+				4CD9BBCB20F0B4FA00EAD32E /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +69,8 @@
 		31AB20B120D65B2F00A16DA5 = {
 			isa = PBXGroup;
 			children = (
+				4CD9BBC920F0B4F700EAD32E /* Realm.framework */,
+				4CD9BBCA20F0B4FA00EAD32E /* RealmSwift.framework */,
 				31AB20BC20D65B2F00A16DA5 /* 3Dimensional Flash Cards */,
 				31AB20BB20D65B2F00A16DA5 /* Products */,
 			);
@@ -54,11 +87,15 @@
 		31AB20BC20D65B2F00A16DA5 /* 3Dimensional Flash Cards */ = {
 			isa = PBXGroup;
 			children = (
+				4C2947DE20F4845B00A64110 /* Main.storyboard */,
 				31AB20BD20D65B2F00A16DA5 /* AppDelegate.swift */,
-				31AB20BF20D65B2F00A16DA5 /* ViewController.swift */,
-				31AB20C120D65B2F00A16DA5 /* Main.storyboard */,
+				4C3A116220F484C0002E41EA /* ListViewController.swift */,
+				4C3A116420F484C7002E41EA /* ViewController.swift */,
 				31AB20C420D65B2F00A16DA5 /* Assets.xcassets */,
 				31AB20C620D65B2F00A16DA5 /* LaunchScreen.storyboard */,
+				4C3A116620F484CD002E41EA /* RealmDateBase.swift */,
+				4C33081320F71375004CB85D /* InputController.swift */,
+				4C33081520F7157C004CB85D /* DetailListViewController.swift */,
 				31AB20C920D65B2F00A16DA5 /* Info.plist */,
 			);
 			path = "3Dimensional Flash Cards";
@@ -74,6 +111,8 @@
 				31AB20B620D65B2F00A16DA5 /* Sources */,
 				31AB20B720D65B2F00A16DA5 /* Frameworks */,
 				31AB20B820D65B2F00A16DA5 /* Resources */,
+				4CD9BBCF20F0B4FA00EAD32E /* Embed Frameworks */,
+				4CD9BBD120F0B6CD00EAD32E /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -123,20 +162,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C2947DF20F4845B00A64110 /* Main.storyboard in Resources */,
 				31AB20C820D65B2F00A16DA5 /* LaunchScreen.storyboard in Resources */,
 				31AB20C520D65B2F00A16DA5 /* Assets.xcassets in Resources */,
-				31AB20C320D65B2F00A16DA5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CD9BBD120F0B6CD00EAD32E /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		31AB20B620D65B2F00A16DA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31AB20C020D65B2F00A16DA5 /* ViewController.swift in Sources */,
+				4C3A116720F484CD002E41EA /* RealmDateBase.swift in Sources */,
+				4C33081620F7157C004CB85D /* DetailListViewController.swift in Sources */,
+				4C3A116520F484C7002E41EA /* ViewController.swift in Sources */,
+				4C3A116320F484C0002E41EA /* ListViewController.swift in Sources */,
+				4C33081420F71375004CB85D /* InputController.swift in Sources */,
 				31AB20BE20D65B2F00A16DA5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +204,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		31AB20C120D65B2F00A16DA5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				31AB20C220D65B2F00A16DA5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		31AB20C620D65B2F00A16DA5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -276,6 +328,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AJSQ62N7S3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "3Dimensional Flash Cards/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -292,6 +348,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AJSQ62N7S3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "3Dimensional Flash Cards/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
