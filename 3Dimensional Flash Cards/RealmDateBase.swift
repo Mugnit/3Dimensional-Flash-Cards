@@ -12,10 +12,14 @@ import Foundation
 class RealmDateBase: Object{
     @objc dynamic var id = 0
     @objc dynamic var title = ""
-    @objc dynamic var japanese = ""
-    @objc dynamic var english = ""
-    @objc dynamic var otherLanguage = ""
+    let words = List<Word>()
     override static func primaryKey() -> String? {
         return "id"
     }
+}
+class Word: Object{
+    @objc dynamic var japanese = ""
+    @objc dynamic var english = ""
+    @objc dynamic var otherLanguage = ""
+    let owners = LinkingObjects(fromType: RealmDateBase.self, property: "words")
 }

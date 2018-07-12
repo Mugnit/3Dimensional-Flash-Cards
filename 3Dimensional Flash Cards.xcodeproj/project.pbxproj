@@ -11,10 +11,11 @@
 		31AB20C520D65B2F00A16DA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31AB20C420D65B2F00A16DA5 /* Assets.xcassets */; };
 		31AB20C820D65B2F00A16DA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31AB20C620D65B2F00A16DA5 /* LaunchScreen.storyboard */; };
 		4C2947DF20F4845B00A64110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2947DE20F4845B00A64110 /* Main.storyboard */; };
+		4C33081420F71375004CB85D /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C33081320F71375004CB85D /* InputController.swift */; };
+		4C33081620F7157C004CB85D /* DetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C33081520F7157C004CB85D /* DetailListViewController.swift */; };
 		4C3A116320F484C0002E41EA /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A116220F484C0002E41EA /* ListViewController.swift */; };
 		4C3A116520F484C7002E41EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A116420F484C7002E41EA /* ViewController.swift */; };
 		4C3A116720F484CD002E41EA /* RealmDateBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A116620F484CD002E41EA /* RealmDateBase.swift */; };
-		4C3A116920F484D1002E41EA /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A116820F484D1002E41EA /* InputController.swift */; };
 		4CD9BBCB20F0B4FA00EAD32E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9BBC920F0B4F700EAD32E /* Realm.framework */; };
 		4CD9BBCC20F0B4FA00EAD32E /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9BBC920F0B4F700EAD32E /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4CD9BBCD20F0B4FA00EAD32E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9BBCA20F0B4FA00EAD32E /* RealmSwift.framework */; };
@@ -43,10 +44,11 @@
 		31AB20C720D65B2F00A16DA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31AB20C920D65B2F00A16DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2947DE20F4845B00A64110 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4C33081320F71375004CB85D /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
+		4C33081520F7157C004CB85D /* DetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListViewController.swift; sourceTree = "<group>"; };
 		4C3A116220F484C0002E41EA /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		4C3A116420F484C7002E41EA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C3A116620F484CD002E41EA /* RealmDateBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDateBase.swift; sourceTree = "<group>"; };
-		4C3A116820F484D1002E41EA /* InputController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
 		4CD9BBC920F0B4F700EAD32E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		4CD9BBCA20F0B4FA00EAD32E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,7 +94,8 @@
 				31AB20C420D65B2F00A16DA5 /* Assets.xcassets */,
 				31AB20C620D65B2F00A16DA5 /* LaunchScreen.storyboard */,
 				4C3A116620F484CD002E41EA /* RealmDateBase.swift */,
-				4C3A116820F484D1002E41EA /* InputController.swift */,
+				4C33081320F71375004CB85D /* InputController.swift */,
+				4C33081520F7157C004CB85D /* DetailListViewController.swift */,
 				31AB20C920D65B2F00A16DA5 /* Info.plist */,
 			);
 			path = "3Dimensional Flash Cards";
@@ -190,9 +193,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C3A116720F484CD002E41EA /* RealmDateBase.swift in Sources */,
+				4C33081620F7157C004CB85D /* DetailListViewController.swift in Sources */,
 				4C3A116520F484C7002E41EA /* ViewController.swift in Sources */,
 				4C3A116320F484C0002E41EA /* ListViewController.swift in Sources */,
-				4C3A116920F484D1002E41EA /* InputController.swift in Sources */,
+				4C33081420F71375004CB85D /* InputController.swift in Sources */,
 				31AB20BE20D65B2F00A16DA5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="2414" y="-216"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Detail List View Controller-->
         <scene sceneID="GTF-Jh-UbI">
             <objects>
-                <tableViewController id="XH8-pX-E4m" sceneMemberID="viewController">
+                <tableViewController id="XH8-pX-E4m" customClass="DetailListViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7K8-gx-jjX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,7 +136,7 @@
         <!--Input Controller-->
         <scene sceneID="4Yz-Dz-PqO">
             <objects>
-                <viewController storyboardIdentifier="InputController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2d3-g2-6RE" customClass="InputController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InputController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2d3-g2-6RE" customClass="InputController" customModule="_Dimensional_Flash_Cards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bDY-d9-rkk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,6 +177,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iab-NA-tQy">
+                                <rect key="frame" x="161" y="548" width="53" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="作成"/>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nng-xg-gXl">
                                 <rect key="frame" x="142" y="71" width="90" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -186,12 +191,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Iab-NA-tQy" firstAttribute="centerX" secondItem="Nng-xg-gXl" secondAttribute="centerX" id="0vh-96-bYJ"/>
                             <constraint firstItem="egD-dn-ojK" firstAttribute="top" secondItem="cFl-DT-esS" secondAttribute="bottom" constant="100" id="0yj-mN-oUg"/>
+                            <constraint firstItem="Iab-NA-tQy" firstAttribute="top" secondItem="20j-Nb-3Bb" secondAttribute="bottom" constant="100" id="2q6-MG-Baz"/>
                             <constraint firstItem="Nng-xg-gXl" firstAttribute="leading" secondItem="tcp-qF-gr9" secondAttribute="leading" constant="142" id="5YA-tT-aUd"/>
+                            <constraint firstItem="Nng-xg-gXl" firstAttribute="centerX" secondItem="bDY-d9-rkk" secondAttribute="centerX" id="7h7-kd-vKi"/>
                             <constraint firstItem="xw2-Ya-UaP" firstAttribute="top" secondItem="Zo9-5T-80x" secondAttribute="bottom" constant="92" id="8r5-yG-Ggc"/>
                             <constraint firstItem="tcp-qF-gr9" firstAttribute="trailing" secondItem="Zo9-5T-80x" secondAttribute="trailing" constant="100" id="9Mx-uJ-U0n"/>
                             <constraint firstItem="Zo9-5T-80x" firstAttribute="leading" secondItem="xw2-Ya-UaP" secondAttribute="leading" id="DXD-9p-BzI"/>
                             <constraint firstItem="iDC-OB-oof" firstAttribute="centerX" secondItem="cFl-DT-esS" secondAttribute="centerX" id="EmX-87-yHD"/>
+                            <constraint firstItem="Iab-NA-tQy" firstAttribute="leading" secondItem="tcp-qF-gr9" secondAttribute="leading" constant="161" id="H4F-qG-KOE"/>
                             <constraint firstItem="cFl-DT-esS" firstAttribute="top" secondItem="iDC-OB-oof" secondAttribute="bottom" constant="100" id="JBV-6h-wP7"/>
                             <constraint firstItem="Zo9-5T-80x" firstAttribute="trailing" secondItem="xw2-Ya-UaP" secondAttribute="trailing" id="Jhy-7r-srv"/>
                             <constraint firstItem="egD-dn-ojK" firstAttribute="centerY" secondItem="20j-Nb-3Bb" secondAttribute="centerY" id="RzO-o3-McX"/>
@@ -211,6 +220,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tcp-qF-gr9"/>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="Nng-xg-gXl" id="we4-Fm-523"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2rF-xc-FAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

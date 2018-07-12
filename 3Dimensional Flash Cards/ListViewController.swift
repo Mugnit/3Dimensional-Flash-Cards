@@ -29,7 +29,12 @@ class ListViewController:UITableViewController {
             
             print("\(realmDateBase.id)")
             print("\(realmDateBase.title)")
+                
              //デバッグ
+                
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                appDelegate.title = textField.text!
+                
             
             self.numberOfWords = self.numberOfWords + 1
                 
