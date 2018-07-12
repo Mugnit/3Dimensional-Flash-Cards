@@ -120,6 +120,15 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uei-Bz-83D" id="PgR-r5-VKK">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="タイトルなし" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lg0-hA-2CS">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -181,9 +190,12 @@
                                 <rect key="frame" x="161" y="548" width="53" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="作成"/>
+                                <connections>
+                                    <action selector="createWordButton:" destination="2d3-g2-6RE" eventType="touchUpInside" id="VLf-g8-kDL"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nng-xg-gXl">
-                                <rect key="frame" x="142" y="71" width="90" height="33"/>
+                                <rect key="frame" x="106" y="71" width="162" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -194,7 +206,7 @@
                             <constraint firstItem="Iab-NA-tQy" firstAttribute="centerX" secondItem="Nng-xg-gXl" secondAttribute="centerX" id="0vh-96-bYJ"/>
                             <constraint firstItem="egD-dn-ojK" firstAttribute="top" secondItem="cFl-DT-esS" secondAttribute="bottom" constant="100" id="0yj-mN-oUg"/>
                             <constraint firstItem="Iab-NA-tQy" firstAttribute="top" secondItem="20j-Nb-3Bb" secondAttribute="bottom" constant="100" id="2q6-MG-Baz"/>
-                            <constraint firstItem="Nng-xg-gXl" firstAttribute="leading" secondItem="tcp-qF-gr9" secondAttribute="leading" constant="142" id="5YA-tT-aUd"/>
+                            <constraint firstItem="Nng-xg-gXl" firstAttribute="leading" secondItem="tcp-qF-gr9" secondAttribute="leading" constant="106" id="5YA-tT-aUd"/>
                             <constraint firstItem="Nng-xg-gXl" firstAttribute="centerX" secondItem="bDY-d9-rkk" secondAttribute="centerX" id="7h7-kd-vKi"/>
                             <constraint firstItem="xw2-Ya-UaP" firstAttribute="top" secondItem="Zo9-5T-80x" secondAttribute="bottom" constant="92" id="8r5-yG-Ggc"/>
                             <constraint firstItem="tcp-qF-gr9" firstAttribute="trailing" secondItem="Zo9-5T-80x" secondAttribute="trailing" constant="100" id="9Mx-uJ-U0n"/>
@@ -221,6 +233,9 @@
                         <viewLayoutGuide key="safeArea" id="tcp-qF-gr9"/>
                     </view>
                     <connections>
+                        <outlet property="inputEnglish" destination="xw2-Ya-UaP" id="HZ4-3a-mqu"/>
+                        <outlet property="inputJapanese" destination="Zo9-5T-80x" id="G9N-Go-dyY"/>
+                        <outlet property="inputOtherLanguage" destination="20j-Nb-3Bb" id="Asf-Wr-ego"/>
                         <outlet property="titleLabel" destination="Nng-xg-gXl" id="we4-Fm-523"/>
                     </connections>
                 </viewController>
