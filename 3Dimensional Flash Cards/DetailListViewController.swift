@@ -52,5 +52,22 @@ class DetailListViewController:UITableViewController {
         //実際に移動するコード
         self.present(second, animated: true, completion: nil)
     }
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let indexTitle = appDelegate.title
+        let realm = try! Realm()
+        
+        let selectedDate = realm.objects(RealmDateBase.self).filter("title == %@" , indexTitle!).first
+        // Realmに保存されている値取得
+        let words = selectedDate?.words
+        let dateBase = words![indexPath.row]
+        
+        //appdelegateのtitleへ入力
+        let appDelegate2 = UIApplication.shared.delegate as! AppDelegate
+        appDelegate2.tappedJapaneseWord = dateBase.japanese
+        
+        //セルの選択解除
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+    }
 }
