@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 class ListViewController:UITableViewController {
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
@@ -87,4 +88,5 @@ class ListViewController:UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
     }
+    
 }

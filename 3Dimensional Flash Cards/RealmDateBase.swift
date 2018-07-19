@@ -12,9 +12,9 @@ import Foundation
 class RealmDateBase: Object{
     @objc dynamic var title = ""
     let words = List<Word>()
-//    override static func primaryKey() -> String? {
-//        return "title"
-//    }
+    override static func primaryKey() -> String? {
+        return "title"
+    }
 }
 class Word: Object{
     @objc dynamic var japanese = ""

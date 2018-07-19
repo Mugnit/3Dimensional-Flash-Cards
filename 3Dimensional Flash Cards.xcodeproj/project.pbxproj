@@ -16,6 +16,7 @@
 		4C3A116320F484C0002E41EA /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A116220F484C0002E41EA /* ListViewController.swift */; };
 		4C3A116520F484C7002E41EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A116420F484C7002E41EA /* ViewController.swift */; };
 		4C3A116720F484CD002E41EA /* RealmDateBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A116620F484CD002E41EA /* RealmDateBase.swift */; };
+		4CC692B420FE07960009E79E /* DetailInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC692B320FE07960009E79E /* DetailInputController.swift */; };
 		4CD9BBCB20F0B4FA00EAD32E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9BBC920F0B4F700EAD32E /* Realm.framework */; };
 		4CD9BBCC20F0B4FA00EAD32E /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9BBC920F0B4F700EAD32E /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4CD9BBCD20F0B4FA00EAD32E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9BBCA20F0B4FA00EAD32E /* RealmSwift.framework */; };
@@ -49,6 +50,7 @@
 		4C3A116220F484C0002E41EA /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		4C3A116420F484C7002E41EA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C3A116620F484CD002E41EA /* RealmDateBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDateBase.swift; sourceTree = "<group>"; };
+		4CC692B320FE07960009E79E /* DetailInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInputController.swift; sourceTree = "<group>"; };
 		4CD9BBC920F0B4F700EAD32E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		4CD9BBCA20F0B4FA00EAD32E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				4C2947DE20F4845B00A64110 /* Main.storyboard */,
+				4CC692B320FE07960009E79E /* DetailInputController.swift */,
 				31AB20BD20D65B2F00A16DA5 /* AppDelegate.swift */,
 				4C3A116220F484C0002E41EA /* ListViewController.swift */,
 				4C3A116420F484C7002E41EA /* ViewController.swift */,
@@ -198,6 +201,7 @@
 				4C3A116320F484C0002E41EA /* ListViewController.swift in Sources */,
 				4C33081420F71375004CB85D /* InputController.swift in Sources */,
 				31AB20BE20D65B2F00A16DA5 /* AppDelegate.swift in Sources */,
+				4CC692B420FE07960009E79E /* DetailInputController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
