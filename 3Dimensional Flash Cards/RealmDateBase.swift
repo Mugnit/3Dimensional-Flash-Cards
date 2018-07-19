@@ -10,11 +10,10 @@ import RealmSwift
 import Foundation
 
 class RealmDateBase: Object{
-    @objc dynamic var id = 0
     @objc dynamic var title = ""
     let words = List<Word>()
     override static func primaryKey() -> String? {
-        return "id"
+        return "title"
     }
 }
 class Word: Object{
